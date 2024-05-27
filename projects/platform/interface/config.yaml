@@ -1,0 +1,32 @@
+global:
+  data:
+      DOMAIN_NAME: "${domain}"
+      BASE_UI_URL: "https://${domain}"
+      BASE_API_URL: "https://api.${domain}"
+
+      CONN_MAX_AGE: 100
+
+      DJANGO_DEBUG: true
+      USE_DOCKER: no
+
+      MAILGUN_DOMAIN: "${mailgun_domain}"
+      MAILGUN_API_URL: "https://api.mailgun.net/v3"
+
+      DJANGO_DEFAULT_FROM_EMAIL: "${from_email}"
+      CONTACT_NOTIFICATION_EMAIL: "${contact_email}"
+
+ui:
+  data:
+    DJANGO_ADMIN_PATH: "admin/"
+
+api:
+  data: {}
+
+scheduler:
+  data: {}
+
+worker:
+  data: {}
+
+flower:
+  data: {}

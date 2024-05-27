@@ -5,13 +5,13 @@ image:
 
 env:
   - name: QDRANT__SERVICE__API_KEY
-    value: "${zimagi_qdrant_password}"
+    value: "${qdrant_password}"
   - name: QDRANT__LOG_LEVEL
     value: INFO
   - name: QDRANT__SERVICE__MAX_REQUEST_SIZE_MB
     value: 1000
 
-apiKey: "${zimagi_qdrant_password}"
+apiKey: "${qdrant_password}"
 
 ingress:
   enabled: true

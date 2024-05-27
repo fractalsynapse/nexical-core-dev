@@ -11,6 +11,15 @@ variable "environment" {
   default     = "Development"
 }
 
+variable "image_repository" {
+  description = "Digital Ocean production image repository"
+  type        = string
+}
+variable "do_token" {
+  description = "Digital Ocean access token"
+  type        = string
+}
+
 #
 # Filesystem variables
 #
@@ -26,12 +35,25 @@ variable "kube_config" {
 variable "mailgun_domain" {
   description = "Mailgun Domain"
   type        = string
-  default     = ""
 }
 variable "mailgun_api_key" {
   description = "Mailgun API key"
   type        = string
-  default     = ""
+}
+variable "mailgun_webhook_key" {
+  description = "Mailgun Webhook key"
+  type        = string
+}
+
+variable "from_email" {
+  description = "Default From Email"
+  type        = string
+  default     = "Nexical AI <noreply@nexical.email>"
+}
+variable "contact_email" {
+  description = "Contact email that receives notifications"
+  type        = string
+  default     = "hello@fractalsynapse.com"
 }
 
 #
@@ -40,12 +62,10 @@ variable "mailgun_api_key" {
 variable "huggingface_api_token" {
   description = "Huggingface API token"
   type        = string
-  default     = ""
 }
 variable "deepinfra_api_key" {
   description = "DeepInfra API key"
   type        = string
-  default     = ""
 }
 
 #
@@ -54,12 +74,10 @@ variable "deepinfra_api_key" {
 variable "github_org" {
   description = "GitHub organization"
   type        = string
-  default     = ""
 }
 variable "github_deployer_token" {
   description = "GitHub organization deployer account token (can access repositories and create deploy keys)"
   type        = string
-  default     = ""
 }
 
 #
@@ -109,24 +127,16 @@ variable "zimagi_admin_api_key" {
 variable "zimagi_email_host_user" {
   description = "Zimagi Email Host User"
   type        = string
-  default     = ""
 }
 variable "zimagi_email_host_password" {
   description = "Zimagi Email Host Password"
   type        = string
-  default     = ""
 }
 
 #
 # Interface platform variables
 #
-variable "interface_api_base_url" {
-  description = "Interface API base URL"
-  type        = string
-  default     = ""
-}
 variable "interface_api_key" {
   description = "Interface API key"
   type        = string
-  default     = ""
 }
