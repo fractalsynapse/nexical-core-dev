@@ -1,8 +1,6 @@
 global:
   data:
-    ZIMAGI_APP_NAME: zimagi
-
-    ZIMAGI_WORKER_PROVIDER: kubernetes
+    ZIMAGI_APP_NAME: core-zimagi
 
     ZIMAGI_GITHUB_ORG: "${github_org}"
 
@@ -72,10 +70,10 @@ controller:
 
 worker:
   data:
-    ZIMAGI_AUTO_UPDATE: false
-    ZIMAGI_WORKER_MAX_PROCESSES: 1
-    ZIMAGI_WORKER_TIMEOUT: 0
-    ZIMAGI_WORKER_CHECK_INTERVAL: 60
+    ZIMAGI_AUTO_UPDATE: true
+    ZIMAGI_WORKER_MAX_PROCESSES: 5
+    ZIMAGI_WORKER_TIMEOUT: 120
+    ZIMAGI_WORKER_CHECK_INTERVAL: 30
 
 flower:
   data: {}
