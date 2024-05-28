@@ -2,6 +2,8 @@ global:
   data:
     ZIMAGI_APP_NAME: zimagi
 
+    ZIMAGI_WORKER_PROVIDER: kubernetes
+
     ZIMAGI_GITHUB_ORG: "${github_org}"
 
     ZIMAGI_DB_MAX_CONNECTIONS: 100
