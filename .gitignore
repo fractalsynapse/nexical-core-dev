@@ -12,6 +12,7 @@
 *.code-workspace
 
 # External libraries
+/charts/
 /argocd-apps/
 
 # Terraform files

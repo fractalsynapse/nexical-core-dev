@@ -13,7 +13,7 @@ image:
     - registry
   repository: ${container_registry}
   image: nexical-core-interface
-  tag: 0.1.1
+  tag: 0.1.51
 
 pvc:
   claims:
