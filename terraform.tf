@@ -8,10 +8,6 @@ terraform {
       source  = "hashicorp/random"
       version = "3.4.3"
     }
-    digitalocean = {
-      source  = "digitalocean/digitalocean"
-      version = "~> 2.0"
-    }
   }
 }
 
@@ -32,11 +28,4 @@ provider "helm" {
   kubernetes {
     config_path = var.kube_config
   }
-}
-
-#
-# Digital Ocean provider setup
-#
-provider "digitalocean" {
-  token = var.do_token
 }
