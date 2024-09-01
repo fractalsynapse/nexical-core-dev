@@ -1,6 +1,6 @@
 argocd_admin_password="Asdf.1234!"
 mailgun_domain="fractalsynapse.com"
-mailgun_api_key="084c104b-c818-4844-833a-ba77c4ec58e9"
+mailgun_api_key="xxxxx"
 mailgun_webhook_key="webhook"
 from_email="info@fractalsynapse.com"
 contact_email="info@fractalsynapse.com"
