@@ -43,18 +43,18 @@ resource "random_password" "qdrant_password" {
 locals {
   variables = sensitive({
     github_org            = var.github_org
-    github_deployer_token = var.github_deployer_token
+    # github_deployer_token = var.github_deployer_token
 
     argocd_server_secret  = random_password.argocd_server_secret.result
     argocd_admin_password = var.argocd_admin_password
 
-    container_registry        = data.digitalocean_container_registry.this.endpoint
-    container_registry_domain = data.digitalocean_container_registry.this.server_url
-    registry_credential       = digitalocean_container_registry_docker_credentials.reader.docker_credentials
+    # container_registry        = data.digitalocean_container_registry.this.endpoint
+    # container_registry_domain = data.digitalocean_container_registry.this.server_url
+    # registry_credential       = digitalocean_container_registry_docker_credentials.reader.docker_credentials
 
     gateway_node_port = var.gateway_node_port
-    certificate_key   = var.ssl_private_key
-    certificate_cert  = var.ssl_certificate
+    # certificate_key   = var.ssl_private_key
+    # certificate_cert  = var.ssl_certificate
 
     mailgun_domain      = var.mailgun_domain
     mailgun_api_key     = var.mailgun_api_key

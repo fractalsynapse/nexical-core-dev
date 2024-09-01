@@ -11,14 +11,14 @@ variable "environment" {
   default     = "Development"
 }
 
-variable "image_repository" {
-  description = "Digital Ocean production image repository"
-  type        = string
-}
-variable "do_token" {
-  description = "Digital Ocean access token"
-  type        = string
-}
+# variable "image_repository" {
+#   description = "Digital Ocean production image repository"
+#   type        = string
+# }
+# variable "do_token" {
+#   description = "Digital Ocean access token"
+#   type        = string
+# }
 
 #
 # Filesystem variables
@@ -75,10 +75,10 @@ variable "github_org" {
   description = "GitHub organization"
   type        = string
 }
-variable "github_deployer_token" {
-  description = "GitHub organization deployer account token (can access repositories and create deploy keys)"
-  type        = string
-}
+# variable "github_deployer_token" {
+#   description = "GitHub organization deployer account token (can access repositories and create deploy keys)"
+#   type        = string
+# }
 
 #
 # Networking variables
@@ -89,14 +89,14 @@ variable "gateway_node_port" {
   default     = 32210
 }
 
-variable "ssl_certificate" {
-  description = "The certificate for the origin server SSL termination"
-  type        = string
-}
-variable "ssl_private_key" {
-  description = "The certificate private key for the origin server SSL termination"
-  type        = string
-}
+# variable "ssl_certificate" {
+#   description = "The certificate for the origin server SSL termination"
+#   type        = string
+# }
+# variable "ssl_private_key" {
+#   description = "The certificate private key for the origin server SSL termination"
+#   type        = string
+# }
 
 #
 # ArgoCD variables

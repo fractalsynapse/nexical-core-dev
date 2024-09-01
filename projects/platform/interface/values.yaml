@@ -9,9 +9,6 @@ postgresql:
         memory: 1024Mi
 
 image:
-  pullSecrets:
-    - registry
-  repository: ${container_registry}
   image: nexical-core-interface
   tag: 0.1.51
 

@@ -19,7 +19,7 @@
 /.terraform/
 /.terraform.lock*
 /terraform.tfstate*
-/*.tfvars
+# /*.tfvars
 /*.tfplan
 
 # Zimagi files
