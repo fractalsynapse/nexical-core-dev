@@ -23,7 +23,9 @@
 /*.tfplan
 
 # Project files
-/bin/
+/docker/
+/charts/
+/terraform/argocd-apps/
 /logs/
 
 # Extra files
