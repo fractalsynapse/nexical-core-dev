@@ -6,27 +6,21 @@ docker:
        remote: https://github.com/zimagi/zimagi.git
        reference: main
        location: platform/zimagi
-       namespace: zimagi
-
 
     nexical_interface:
-       remote: https://github.com/fractalsynapse/nexical-core-interface-template.git
+       remote: https://github.com/fractalsynapse/nexical-core-interface.git
        reference: main
-       cookiecutter: true
        location: platform/interface
-       namespace: interface
 
 charts:
     zimagi:
+       name: zimagi
        remote: https://github.com/zimagi/charts.git
        reference: main
-       name: zimagi
        location: platform/zimagi
-       namespace: zimagi
 
     nexical:
+       name: nexical-core-interface
        remote: https://github.com/fractalsynapse/nexical-charts.git
        reference: main
-       name: nexical-core-interface
        location: platform/interface
-       namespace: interface
