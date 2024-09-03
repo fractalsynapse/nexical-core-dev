@@ -22,8 +22,9 @@
 # /*.tfvars
 /*.tfplan
 
-# Zimagi files
-/.initialized
+# Project files
+/bin/
+/logs/
 
 # Extra files
 /tmp/
