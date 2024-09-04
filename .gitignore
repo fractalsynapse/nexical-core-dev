@@ -24,6 +24,7 @@
 
 # Project files
 /env/*/secret.sh
+/certs/
 /docker/
 /charts/
 /terraform/argocd-apps/
