@@ -3,14 +3,18 @@ short_name: nexical
 
 docker:
     zimagi:
-       remote: https://github.com/zimagi/zimagi.git
-       reference: main
-       location: platform/zimagi
+        remote: https://github.com/zimagi/zimagi.git
+        reference: main
+        location: platform/zimagi
+        docker_dir: docker
+        docker_tag: dev
 
     nexical_interface:
-       remote: https://github.com/fractalsynapse/nexical-core-interface.git
-       reference: main
-       location: platform/interface
+        remote: https://github.com/fractalsynapse/nexical-core-interface.git
+        reference: main
+        location: platform/interface
+        docker_dir: compose/production/django
+        docker_tag: dev
 
 charts:
     zimagi:
