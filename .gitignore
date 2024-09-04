@@ -23,6 +23,7 @@
 /*.tfplan
 
 # Project files
+/env/*/secret.sh
 /docker/
 /charts/
 /terraform/argocd-apps/
