@@ -23,6 +23,10 @@ variable "environment" {
 #
 # Filesystem variables
 #
+variable "project_path" { # CI/CD project directory
+  description = "Base project path"
+  type        = string
+}
 variable "kube_config" {
   description = "Kubernetes cluster credential file (~/.kube/config)."
   type        = string
@@ -89,14 +93,14 @@ variable "gateway_node_port" {
   default     = 32210
 }
 
-# variable "ssl_certificate" {
-#   description = "The certificate for the origin server SSL termination"
-#   type        = string
-# }
-# variable "ssl_private_key" {
-#   description = "The certificate private key for the origin server SSL termination"
-#   type        = string
-# }
+variable "ssl_certificate" {
+  description = "The certificate for the origin server SSL termination"
+  type        = string
+}
+variable "ssl_private_key" {
+  description = "The certificate private key for the origin server SSL termination"
+  type        = string
+}
 
 #
 # ArgoCD variables

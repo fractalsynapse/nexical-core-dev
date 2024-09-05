@@ -1,12 +1,12 @@
 module "kubernetes_apps" {
-  source = "github.com/zimagi/argocd-apps?ref=2.2.4"
+  source = "${var.project_path}/terraform/argocd-apps"
 
   domain      = var.domain
   environment = var.environment
 
-  argocd_config_path = "./argocd"
-  project_path       = "./projects"
-  config_path        = "./config"
+  role_groups        = local.access_config.argocd
+  argocd_config_path = "${var.project_path}/argocd"
+  project_path       = "${var.project_path}/projects"
 
   project_sequence = [
     "system",
