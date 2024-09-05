@@ -9,3 +9,7 @@ export ZIMAGI_DEFAULT_MODULES='
     "reference": "main"
   }
 ]'
+
+export ZIMAGI_SENTENCE_PARSER_PROVIDERS='["core_en_web"]'
+export ZIMAGI_ENCODER_PROVIDERS='["mpnet_di"]'
+export ZIMAGI_SUMMARIZER_PROVIDERS='["mixtral_di_7bx8"]'
