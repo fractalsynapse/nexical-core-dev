@@ -11,8 +11,10 @@
 /.vscode
 *.code-workspace
 
+# Minikube related
+/.minikube/
+
 # External libraries
-/charts/
 /argocd-apps/
 
 # Terraform files
@@ -23,6 +25,7 @@
 /*.tfplan
 
 # Project files
+/env/*/.kubeconfig
 /env/*/secret.sh
 /certs/
 /docker/
