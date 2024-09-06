@@ -5,4 +5,5 @@
 #-----------------------------------------------------------------------------------------
 
 function finalize () {
+  debug "Shutting down reactor command for project ..."
 }
