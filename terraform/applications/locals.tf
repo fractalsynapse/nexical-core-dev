@@ -3,7 +3,7 @@ locals {
 }
 
 locals {
-  access_config = yamldecode(file("${var.project_path}/access.yaml"))
+  access_config = yamldecode(file("${var.project_path}/access.yml"))
 
   oauth_emails = tolist(toset(flatten([
     for group, emails in local.access_config.ingress : emails
