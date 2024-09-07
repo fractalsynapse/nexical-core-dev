@@ -1,5 +1,5 @@
 module "kubernetes_apps" {
-  source = "${var.project_path}/terraform/argocd-apps"
+  source = "../argocd-apps"
 
   domain      = var.domain
   environment = var.environment
