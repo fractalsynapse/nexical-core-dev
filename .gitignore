@@ -19,10 +19,10 @@
 
 # Terraform files
 /.terraform/
-/.terraform.lock*
-/terraform.tfstate*
-# /*.tfvars
-/*.tfplan
+/terraform/applications/.terraform.lock*
+/terraform/applications/.terraform.tfstate*
+/terraform/applications/*.tfvars
+/terraform/applications/*.tfplan
 
 # Project files
 /env/*/.kubeconfig
