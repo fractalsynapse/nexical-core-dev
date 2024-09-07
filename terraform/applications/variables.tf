@@ -6,19 +6,10 @@ variable "domain" {
   type        = string
 }
 variable "environment" {
-  description = "Platform Environment"
+  description = "Platform environment"
   type        = string
-  default     = "Development"
+  default     = "local"
 }
-
-# variable "image_repository" {
-#   description = "Digital Ocean production image repository"
-#   type        = string
-# }
-# variable "do_token" {
-#   description = "Digital Ocean access token"
-#   type        = string
-# }
 
 #
 # Filesystem variables
@@ -28,10 +19,47 @@ variable "project_path" { # CI/CD project directory
   type        = string
 }
 variable "kube_config" {
-  description = "Kubernetes cluster credential file (~/.kube/config)."
+  description = "Kubernetes cluster credential file"
   type        = string
-  default     = "~/.kube/config"
 }
+
+#
+# Networking variables
+#
+variable "gateway_node_port" {
+  description = "Kubernetes Gateway Ingress Node port"
+  type        = number
+  default     = 32210
+}
+
+variable "ssl_certificate" {
+  description = "The certificate for the origin server SSL termination"
+  type        = string
+}
+variable "ssl_private_key" {
+  description = "The certificate private key for the origin server SSL termination"
+  type        = string
+}
+
+#
+# ArgoCD variables
+#
+variable "argocd_admin_password" {
+  description = "ArgoCD administrator password (bcrypt hash)"
+  type        = string
+}
+
+#
+# Repository Management variables
+#
+variable "github_org" {
+  description = "GitHub organization"
+  type        = string
+}
+# variable "github_deployer_token" {
+#   description = "GitHub organization deployer account token (can access repositories and create deploy keys)"
+#   type        = string
+# }
 
 #
 # Mailgun variables
@@ -69,44 +97,6 @@ variable "huggingface_api_token" {
 }
 variable "deepinfra_api_key" {
   description = "DeepInfra API key"
-  type        = string
-}
-
-#
-# Repository Management variables
-#
-variable "github_org" {
-  description = "GitHub organization"
-  type        = string
-}
-# variable "github_deployer_token" {
-#   description = "GitHub organization deployer account token (can access repositories and create deploy keys)"
-#   type        = string
-# }
-
-#
-# Networking variables
-#
-variable "gateway_node_port" {
-  description = "Kubernetes Gateway Ingress Node port"
-  type        = number
-  default     = 32210
-}
-
-variable "ssl_certificate" {
-  description = "The certificate for the origin server SSL termination"
-  type        = string
-}
-variable "ssl_private_key" {
-  description = "The certificate private key for the origin server SSL termination"
-  type        = string
-}
-
-#
-# ArgoCD variables
-#
-variable "argocd_admin_password" {
-  description = "ArgoCD administrator password (bcrypt hash)"
   type        = string
 }
 
