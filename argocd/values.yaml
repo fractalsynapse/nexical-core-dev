@@ -12,10 +12,10 @@ server:
     enabled: true
     ingressClassName: nginx
     hosts:
-      - "argocd.${domain}"
+      - "argocd.${DOMAIN}"
     paths:
       - /
     tls:
       - secretName: origin-cert
         hosts:
-          - "argocd.${domain}"
+          - "argocd.${DOMAIN}"
