@@ -3,4 +3,4 @@ enabled: true
 name: nginx
 repository: "https://charts.bitnami.com/bitnami"
 chart: "nginx-ingress-controller"
-version: 9.3.26
+version: 11.4.1

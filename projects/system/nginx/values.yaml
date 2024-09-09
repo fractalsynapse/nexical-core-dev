@@ -7,7 +7,7 @@ service:
     https: 443
 
   nodePorts:
-    https: ${gateway_node_port}
+    https: ${GATEWAY_NODE_PORT}
 
   targetPort:
     http: http
