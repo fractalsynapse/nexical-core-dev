@@ -1,4 +1,9 @@
 #
+# Cluster environment configurations
+#
+export GATEWAY_NODE_PORT=32210
+
+#
 # Zimagi environment configurations
 #
 export ZIMAGI_DEFAULT_MODULES='
