@@ -1,9 +1,6 @@
+#!/usr/bin/env bash
 #
 #=========================================================================================
-# Command shutdown
+# Reactor container installation
 #
 #-----------------------------------------------------------------------------------------
-
-function finalize () {
-  debug "Shutting down reactor command for project ..."
-}
