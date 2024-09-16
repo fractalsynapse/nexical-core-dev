@@ -1,5 +1,5 @@
 name: Nexical Core Platform
-short_name: default
+short_name: nexical
 
 docker:
     zimagi:
